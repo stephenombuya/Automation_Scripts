@@ -12,3 +12,7 @@ driver.get(url=url)
 
 time.sleep(10)
 driver.refresh()
+
+
+
+
