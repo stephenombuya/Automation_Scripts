@@ -1,68 +1,111 @@
-# Automation_Scripts
+# **Automation_Scripts**
+A collection of Python scripts and tools designed to automate various tasks, improve productivity, and simplify repetitive actions. Each script is well-documented and serves a specific purpose, ranging from data visualization to smart home control.
 
-## Refresh URL with Selenium
+---
 
-This Python script uses Selenium to open a YouTube URL in a Chrome browser, waits for 10 seconds, and then refreshes the page. It can be adapted for any website by changing the `url` variable.
+## **Repository Structure**
+### Folders:
+   1. **Facebook Bot**
+      - Automate interactions and actions on Facebook. Includes a basic setup and app.py.
 
-## Prerequisites
+   2. **Instagram Bot**
+      - A script for automating Instagram tasks such as posting, commenting, or following.
 
-Before running the script, ensure you have the following installed:
+   3. **Twitter Bot**
+      - Automate Twitter tasks, including posting tweets and managing followers.
 
-- **Python** (Version 3.x)
-- **Selenium** library
-- **webdriver-manager** library
+### **Standalone Scripts:**
+   1. `currency_converter.py`
+      - Converts currencies using live exchange rates from online APIs.
 
-## Installation
+   2. `data_visualizer.py`
+      - Creates interactive data visualizations using libraries like Matplotlib or Plotly.
 
-1. **Clone or download the repository**:
+   3. `email_sender.py`
+      - Automates email sending using SMTP protocols. Supports attachments.
 
-   ```
-   git clone https://github.com/stephenombuya/Automation_Scripts.git
-   cd Automation.py
-   ```
+   4. `file_organizer.py`
+      - Organizes files in a directory by categories such as file type.
 
-2. **Install the required Python packages**:
+   5. `pdf_merger.py`
+      - Merges multiple PDF files into a single document.
 
-Use pip to install Selenium and webdriver-manager.
+   6. `screenshot_capture.py`
+      - Captures screenshots of your desktop or a specific application window.
 
-```
-pip install selenium 
-```
+   7. `smart_home_control.py`
+      - Integrates with IoT devices to control smart home functions like lights or thermostats.
 
-```
-pip install webdriver-manager
-```
+   8. `system_health_check.py`
+      - Monitors system performance metrics like CPU usage, memory, and disk space.
 
-3. **Install Chrome browser**:
+   9. `url_refresher.py`
+      - Refreshes a given URL using Selenium WebDriver, with configurable wait times.
 
-Ensure that Google Chrome is installed on your system, as this script uses Chrome as the browser.
+   10. `web_scraper.py`
+      - Scrapes web pages for data using BeautifulSoup or Selenium.
+
+   11. `word_merger.py`
+      - Merges multiple Word documents into a single file.
+
+---
 
 
-## Usage
+## **Setup Instructions**
+### Prerequisites
+   - Python 3.x
+   - Required libraries:
+      - Selenium
+      - BeautifulSoup
+      - Matplotlib / Plotly (for data visualization)
+      - PyPDF2 (for PDF merging)
+      - smtplib (for email automation)
+      - Any other specific libraries listed in individual script headers.
 
-1. **Run the script**:
 
-To run the script, execute the following command in your terminal:
+### Installation
+   1. Clone the repository:
 
-```
-python Automation.py
-```
+      ```bash
+      git clone https://github.com/stephenombuya/Automation_Scripts/tree/main
+      cd Automation_Scripts
+      ```
 
-2. **What the script does**:
+   2. Install dependencies:
 
-The script opens the YouTube homepage in a Chrome browser.
-It waits for 10 seconds before refreshing the page.
+      ```
+      pip install -r requirements.txt
+      ```
+      
 
-3. **Modify the URL**:
+### Script-Specific Setup
+Some scripts may require additional setup (e.g., API keys for bots, SMTP credentials for `email_sender.py`, or ChromeDriver for Selenium). Refer to the script comments for details.
 
-To open a different URL, simply change the value of the `url` variable in the script:
+---
 
-```
-url = "https://www.example.com/"
-```
+## **General Usage**
+   1. Navigate to the script directory:
 
-## Troubleshooting
+      ```bash
+      cd <script_name>
+      ```
 
-* Ensure Chrome is installed and up-to-date.
-* If ChromeDriver installation fails, manually download the appropriate version for your Chrome from ChromeDriver.
+   2. Run the script:
 
+     ``` php
+      python <script_name>.py
+      ```
+      
+   3. Modify the configuration variables as needed in each script to customize behavior (e.g., URL for `url_refresher.py` or directory path for `file_organizer.py`).
+
+---
+
+
+## **Troubleshooting**
+   - Ensure all dependencies are installed.
+   - Check for updated versions of ChromeDriver or other required tools.
+   - Follow the specific error message recommendations.
+
+For issues or suggestions, feel free to create an issue in the GitHub repository.
+
+---
