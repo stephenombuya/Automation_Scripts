@@ -206,5 +206,5 @@ This bot was created by an intelligent and skilled software engineer specializin
 ---
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
